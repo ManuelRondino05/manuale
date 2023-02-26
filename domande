@@ -1,0 +1,118 @@
+//LE CLASSI ASTRATTE
+Le classi astratte sono classi che non possono essere istanziate direttamente, ma possono essere utilizzate solo come superclassi da cui derivare altre classi. In altre parole, sono classi che servono come modello o "scheletro" per le classi figlie.
+Le classi astratte definiscono metodi (senza implementazione) che le classi figlie devono implementare. In questo modo, le classi astratte forniscono un'interfaccia comune per un insieme di classi correlate, garantendo che le classi figlie implementino in modo consistente i metodi richiesti.
+ In Java, le classi astratte vengono dichiarate usando la parola chiave "abstract"
+
+//METODI ASTRATTI
+I metodi astratti sono metodi dichiarati senza una definizione di implementazione nella classe in cui sono dichiarati. Invece, l'implementazione deve essere fornita dalle classi che ereditano dalla classe in cui il metodo astratto è stato dichiarato.
+In Java, i metodi astratti sono dichiarati usando la parola chiave "abstract
+
+//METODO COSTRUTTORE
+In Java, il costruttore è un blocco di codice che viene eseguito quando viene creato un nuovo oggetto di una classe. Il suo scopo è quello di inizializzare gli attributi dell'oggetto appena creato.
+Per definire un costruttore in Java, è necessario utilizzare la stessa sintassi del nome della classe e il metodo deve essere dichiarato pubblico.
+
+//METODO COSTRUTTORE DI COPIA 
+Il costruttore di copia in Java è un tipo di costruttore che consente di creare un nuovo oggetto a partire da un altro oggetto esistente della stessa classe. Il costruttore di copia prende come parametro un oggetto della stessa classe e copia tutti i suoi attributi dell'oggetto appena creato.
+Per definire un costruttore di copia in Java, è necessario utilizzare la stessa sintassi del costruttore di default, ma con un parametro che rappresenta l'oggetto da copiare
+
+//INTERFACCE
+In Java, un'interfaccia è una collezione di metodi astratti che non forniscono implementazioni. Un'interfaccia può essere utilizzata per definire un contratto che una classe deve seguire, specificando i metodi che la classe deve implementare.
+Per definire un'interfaccia in Java, è necessario utilizzare la parola chiave "interface" seguita dal nome dell'interfaccia e dalle parentesi graffe che racchiudono la lista dei metodi astratti da definire.
+
+//ATTRIBUTI E METODI
+In Java, gli attributi e i metodi sono elementi fondamentali delle classi, che rappresentano gli oggetti. Gli attributi rappresentano le caratteristiche degli oggetti, mentre i metodi rappresentano il comportamento degli oggetti.
+Gli attributi in Java sono le variabili dichiarate all'interno di una classe e rappresentano le caratteristiche dell'oggetto. Gli attributi possono essere di diversi tipi, come ad esempio numerici, stringhe, booleani, ecc. Gli attributi possono essere accessibili solo all'interno della classe in cui sono dichiarati, a meno che non siano dichiarati come "public".
+I metodi in Java sono le funzioni dichiarate all'interno di una classe e rappresentano il comportamento dell'oggetto. I metodi possono essere di diversi tipi, come ad esempio metodi che restituiscono un valore o metodi che non restituiscono nulla ("void"). I metodi possono essere accessibili solo all'interno della classe in cui sono dichiarati, a meno che non siano dichiarati come "public".
+
+//EREDITARIETÀ E POLIMORFISMO 
+In Java, l'ereditarietà e il polimorfismo sono due concetti fondamentali della programmazione orientata agli oggetti.
+L'ereditarietà in Java consente di definire una nuova classe basandosi su una classe esistente, ereditando gli attributi e i metodi della classe padre e aggiungendone di nuovi o modificando quelli esistenti. La classe figlia può quindi utilizzare gli attributi e i metodi della classe padre, nonché quelli aggiunti o modificati.
+Per definire una classe figlia in Java, è necessario utilizzare la parola chiave "extends" seguita dal nome della classe padre.
+Il polimorfismo in Java consente di utilizzare un oggetto di una classe figlia come se fosse un oggetto della classe padre. Questo significa che un oggetto di una classe figlia può essere assegnato a una variabile di tipo della classe padre e può essere utilizzato in un contesto dove è richiesto un oggetto della classe padre.
+
+//JVM
+La JVM (Java Virtual Machine) è il componente chiave dell'architettura Java, poiché fornisce l'ambiente di esecuzione per i programmi Java. La JVM è un'implementazione software della macchina virtuale, che interpreta il bytecode Java e lo esegue sulla macchina host. Il bytecode Java è il codice compilato a partire dal codice sorgente Java, che è indipendente dalla piattaforma e può essere eseguito su qualsiasi piattaforma che supporta la JVM.
+La JVM svolge numerosi compiti critici durante l'esecuzione di un programma Java, tra cui:
+Caricamento del bytecode Java
+Verifica del bytecode per garantire che sia sicuro ed eseguibile
+Interpretazione del bytecode in istruzioni macchina specifiche della piattaforma
+Esecuzione del programma Java
+Gestione della memoria (tramite garbage collection)
+
+//JVR
+JRE è l'acronimo di "Java Runtime Environment". Si tratta di un ambiente di esecuzione che consente di eseguire i programmi Java su un computer, senza la necessità di avere un ambiente di sviluppo Java completo installato. Il JRE include la JVM (Java Virtual Machine), le librerie di classi Java e altri componenti necessari per eseguire applicazioni Java.
+
+//ASSOCIAZIONI TRA CLASSI: 
+Le associazioni tra classi sono relazioni che possono essere definite tra due o più classi in un programma Java. Ci sono diverse tipologie di associazioni tra classi, tra cui:
+Associazione diretta: Una classe fa riferimento a un'altra classe. Ad esempio, una classe "Auto" può fare riferimento a una classe "Motore", poiché l'auto ha un motore.
+Associazione aggregazione: Una classe possiede un'istanza di un'altra classe. Ad esempio, una classe "Squadra" può possedere un'istanza di una classe "Giocatore", poiché una squadra è composta da giocatori.
+Associazione composizione: Una classe possiede un'istanza di un'altra classe e la vita delle due classi è strettamente legata. Ad esempio, una classe "Casa" può possedere un'istanza di una classe "Camera", poiché una camera non può esistere senza una casa.
+Associazione dipendenza: Una classe utilizza un'altra classe come parametro o variabile locale all'interno di un metodo. Ad esempio, una classe "Calcolatrice" può dipendere da una classe "Matematica", poiché la calcolatrice utilizza metodi matematici per effettuare i calcoli.
+
+//CLASSE:
+una classe è un modello o un "tipo" astratto che definisce un insieme di attributi e metodi che descrivono un oggetto del mondo reale o concettuale. In altre parole, una classe rappresenta una categoria di oggetti che condividono le stesse proprietà e comportamenti. Ed è formata da metodi e attributi
+
+//OGGETTO
+un oggetto è un'istanza di una classe. In altre parole, un oggetto rappresenta un'entità concreta o concettuale del mondo reale che è descritta dalla classe
+Ogni oggetto ha un proprio stato, ovvero un insieme di variabili di istanza che rappresentano le informazioni associate a quell'oggetto. Gli oggetti possono anche eseguire azioni (o metodi) che cambiano lo stato dell'oggetto stesso o che interagiscono con altri oggetti.
+In Java, si crea un oggetto utilizzando la keyword "new" seguita dal nome della classe e dalle parentesi tonde che rappresentano eventuali argomenti del costruttore della classe
+
+
+//ACCESSIBILITA' DEI MEMBRI DI UNA CLASSE
+In Java, l'accessibilità dei membri (attributi e metodi) di una classe può essere controllata utilizzando i seguenti modificatori di accesso:
+"public": i membri pubblici di una classe sono accessibili da qualsiasi parte del codice, incluso il codice esterno alla classe.
+"private": i membri privati di una classe sono accessibili solo all'interno della classe stessa e non sono accessibili dal codice esterno alla classe.
+"protected": i membri protetti di una classe sono accessibili all'interno della classe stessa e da altre classi che ereditano da quella classe (ovvero le sottoclassi).
+"package-private" (o "default"): i membri senza alcun modificatore di accesso sono accessibili solo all'interno del pacchetto in cui la classe è definita.
+analogamente, i metodi di una classe possono avere i seguenti modificatori di accesso:
+"public": i metodi pubblici di una classe sono accessibili da qualsiasi parte del codice, incluso il codice esterno alla classe.
+"private": i metodi privati di una classe sono accessibili solo all'interno della classe stessa e non sono accessibili dal codice esterno alla classe.
+"protected": i metodi protetti di una classe sono accessibili all'interno della classe stessa e da altre classi che ereditano da quella classe (ovvero le sottoclassi).
+"package-private" (o "default"): i metodi senza alcun modificatore di accesso sono accessibili solo all'interno del pacchetto in cui la classe è definita.
+
+//MEMBRI STATICI DI UNA CLASSE 
+In Java, i membri statici di una classe sono membri che appartengono alla classe stessa anziché a una specifica istanza della classe. Ciò significa che i membri statici sono condivisi tra tutte le istanze della classe e possono essere accessibili senza dover creare un'istanza della classe.
+I membri statici possono essere di due tipi: attributi statici e metodi statici.
+Gli attributi statici sono dichiarati utilizzando il modificatore di accesso "static", I metodi statici sono definiti utilizzando il modificatore di accesso "static"
+
+//MAIN
+Il metodo "main" è un metodo statico presente in ogni classe Java, che rappresenta il punto di ingresso del programma. Quando si avvia un'applicazione Java, il sistema cerca il metodo "main" nella classe specificata e lo esegue. 
+Il metodo "main" deve essere pubblico, statico e senza valore di ritorno (void). Deve anche accettare un parametro di tipo "String[]" chiamato "args", che rappresenta gli argomenti passati al programma dalla riga di comando.
+Il corpo del metodo "main" contiene il codice che verrà eseguito quando il programma viene avviato.
+
+//JAVABEAN
+JavaBean è un modello di programmazione per creare componenti software riutilizzabili in Java. Un JavaBean è una classe Java che segue determinate convenzioni per fornire un'interfaccia standardizzata per la creazione, l'utilizzo e la gestione di oggetti.
+Le convenzioni di JavaBean prevedono che la classe debba avere un costruttore pubblico senza argomenti, un insieme di proprietà accessibili attraverso metodi getter e setter, e la possibilità di generare eventi di notifica per indicare eventuali modifiche alle proprietà.
+
+//DATI PRIMITIVI E CLASSI WRAPPER
+In Java, i dati primitivi rappresentano i tipi di dati fondamentali, come int, double, boolean, char, byte, short, long e float. Questi tipi di dati sono gestiti direttamente dal sistema e non sono oggetti.
+D'altra parte, le classi wrapper sono classi Java che incapsulano un valore di un tipo primitivo e lo rendono un oggetto. Ciò significa che, per esempio, un valore int può essere incapsulato in un oggetto Integer usando la classe wrapper Integer. Le classi wrapper sono: Integer, Double, Boolean, Character, Byte, Short, Long e Float.
+Le classi wrapper forniscono metodi per accedere ai valori dei dati primitivi, per eseguire operazioni aritmetiche, per confrontare i valori e per convertire i valori da una rappresentazione all'altra.
+
+//CLASSI DI SERVIZIO 
+Le classi di servizio (o utility class) in Java sono classi che contengono metodi statici utili per svolgere compiti specifici, come la conversione di tipi di dati, la manipolazione di stringhe, l'interazione con il file system o la gestione di date e orari.
+Le classi di servizio sono spesso usate per raggruppare metodi correlati in un'unica classe, rendendo più facile l'organizzazione e la manutenzione del codice. Inoltre, i metodi statici di queste classi possono essere utilizzati senza dover creare istanze della classe, il che significa che possono essere utilizzati in modo efficiente in tutto il codice.
+ESEMPIO DI CLASSE DI SERVIZIO : CLASSE MATH (RENDE DISPONIBILI METODI PER IL CALCOLO MATEMATICO COME AD ESEMPIO LE RADICI SQRT)
+
+//STRINGHE
+In Java, una stringa è una sequenza di caratteri. Le stringhe sono rappresentate dalla classe String e sono immutabili, il che significa che una volta che un oggetto stringa viene creato, non può essere modificato.
+
+//SWITCH CASE
+L'istruzione switch case in Java è una struttura di controllo che permette di eseguire un blocco di codice diverso a seconda del valore di una variabile. È spesso utilizzata come alternativa alla sequenza di istruzioni if-else quando si devono effettuare molteplici scelte
+
+//JAVADOC
+Javadoc è uno strumento di documentazione automatica per il linguaggio di programmazione Java. Consente di generare documentazione in formato HTML a partire dal codice sorgente Java, aiutando a descrivere il funzionamento delle classi, dei metodi e delle variabili utilizzati nel codice.
+Per utilizzare Javadoc, si utilizza un'apposita sintassi per descrivere le varie parti del codice che si vogliono documentare. In particolare, si possono utilizzare apposite annotazioni per documentare le classi, i metodi e le variabili.
+Dopo aver scritto il codice e le relative annotazioni Javadoc, è possibile utilizzare il comando javadoc della JDK per generare la documentazione HTML corrispondente. La documentazione risultante conterrà descrizioni dettagliate delle classi, dei campi e dei metodi documentati, aiutando così a capire meglio il funzionamento del codice sorgente Java.
+
+//JAVA SHELL
+La Java Shell, nota anche come JShell, è un'interfaccia a riga di comando per eseguire codice Java interattivamente, senza dover scrivere un programma completo e compilare il codice sorgente. La Java Shell è stata introdotta in Java 9 e può essere utilizzata da linea di comando tramite il comando jshell.
+Con JShell, è possibile scrivere ed eseguire comandi Java direttamente da una finestra di console interattiva.
+La Java Shell è particolarmente utile per esplorare il linguaggio Java e testare piccole porzioni di codice, ma non è un sostituto per la scrittura di programmi completi. Tuttavia, può essere uno strumento utile per risparmiare tempo durante lo sviluppo e per aiutare a comprendere il comportamento del codice Java.
+
+//THIS
+In Java, this è una parola chiave che fa riferimento all'oggetto corrente su cui il metodo è stato invocato o all'istanza corrente della classe.
+
+//METODI OVERLOAD
+In Java, il metodo overload (sovraccarico) permette di definire più metodi con lo stesso nome all'interno di una classe, purché abbiano firme diverse, ovvero diversi tipi e/o diverso numero di parametri di input.
+Il compilatore Java seleziona il metodo da invocare in base alla firma del metodo, che è determinata dal numero, dal tipo e dall'ordine dei parametri di input. Ciò consente di creare metodi con lo stesso nome che effettuano operazioni simili, ma con input diversi.
